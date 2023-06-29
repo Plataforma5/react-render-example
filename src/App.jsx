@@ -1,4 +1,5 @@
 import * as React from "react";
+import Redux from "./Redux";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
@@ -48,7 +49,7 @@ function App() {
         />
       </div>
 
-      <h1>{count}</h1>
+      <Redux />
     </>
   );
 }
