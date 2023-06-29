@@ -12,14 +12,24 @@ function App() {
   const startInterval = () => {
     const id = setInterval(() => {
       console.log("COUNT", count);
-      setCount(count + 1);
+      // setCount(count + 1);  // queda en 11
+      setCount((realCount) => realCount + 1); // updatea bien
     }, 1000);
     setIntervalID(id);
   };
 
   const stopInterval = () => {
-    stopInterval(intervalID);
+    clearInterval(intervalID);
   };
+
+  // React.useEffect(() => {
+
+  //   abdkanlsnd
+
+  //   return () => {
+
+  //   }
+  // },[intervalID])
 
   return (
     <>
